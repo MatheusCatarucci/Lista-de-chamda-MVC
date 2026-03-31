@@ -1,0 +1,82 @@
+/* Estilos do cabeçalho */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-voltar {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Syne', sans-serif;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Estilos do container do formulário */
+.form-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-add {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Estilos dos inputs e labels */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input {
+    padding: 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* Estilos do botão de enviar */
+.btn-submit {
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #333;
+}

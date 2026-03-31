@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Syne',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* container */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* header */
+
+header{
+    background:#020617;
+    border-bottom:1px solid #1e293b;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+header h1{
+    font-size:32px;
+}
+
+.contador{
+    font-family:'DM Mono',monospace;
+    background:#1e293b;
+    padding:6px 14px;
+    border-radius:6px;
+}
+
+/* lista */
+
+.lista{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* aluno card */
+
+.aluno{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    background:#1e293b;
+    padding:18px;
+
+    border-radius:10px;
+    transition:0.2s;
+}
+
+.aluno:hover{
+    background:#334155;
+    transform:scale(1.03);
+}
+
+/* numero */
+
+.numero{
+    font-family:'DM Mono',monospace;
+    font-size:22px;
+    font-weight:500;
+
+    background:#0f172a;
+    padding:10px 14px;
+    border-radius:6px;
+}
+
+/* nome */
+
+.nome{
+    font-size:18px;
+    font-weight:600;
+}

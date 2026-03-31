@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Chamada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="{{ url_for('static', path='/css/home.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Sistema de Chamada</h1>
+            <span class="contador">{{ lista_alunos|length }} alunos</span>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="lista">
+
+            {% for numero, nome in lista_alunos.items() %}
+            <div class="aluno">
+
+                <div class="numero">
+                    {{ numero }}
+                </div>
+
+                <div class="nome">
+                    {{ nome }}
+                </div>
+
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

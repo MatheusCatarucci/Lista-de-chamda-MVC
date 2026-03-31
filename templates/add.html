@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Aluno - Sistema de Chamada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link href="{{ url_for('static', path='/css/add.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <h1>Adicionar Novo Aluno</h1>
+            <a href="/home" class="btn-voltar">Voltar</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="form-container">
+            <form action="/add_web" method="POST" class="form-add">
+
+                <div class="input-group">
+                    <label for="nome">Nome do Aluno:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite o nome do aluno">
+                </div>
+
+                <button type="submit" class="btn-submit">Adicionar Aluno</button>
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
